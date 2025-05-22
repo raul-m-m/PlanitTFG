@@ -1,0 +1,73 @@
+#map {
+    height: 400px;
+    position: relative;
+}
+
+#mapOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+#loadingSpinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1001;
+    width: 3rem;
+    height: 3rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.event-photo-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.event-photo-card img {
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    width: 100%;
+}
+
+.event-photo-card .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.event-photo-card:hover .hover-text {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}

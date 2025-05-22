@@ -1,0 +1,7 @@
+Usuario: creo Contraseña: creo | Para probar la aplicación desde la perspectiva de un usuario que crea un evento+
+
+Usuario: meuno Contraseña: meuno | Para probar la aplicación desde la perspectiva de un usuario que se une a un evento
+
+Usuario: bloqueado Contraseña: bloqueado | Para probar la aplicación desde la perspectiva de un usuario que ha sido bloqueado por el creador
+
+Usuario: admin Contraseña: soyadministrador | Para probar la aplicación en modo administrador
